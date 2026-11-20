@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b14">
+<meta name="description" content="GOLI GAME | فروشگاه تخصصی کنسول، بازی و تجهیزات گیمینگ">
+<title>GOLI GAME | دنیای بازی، با انتخاب تو</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090b14;--panel:#111522;--panel2:#171d2d;--panel3:#20283b;--line:#2a3550;--muted:#9aa4bc;--text:#f4f6ff;--lime:#59e1f2;--lime2:#46c8dc;--orange:#9a7bff;--red:#ff6573;--blue:#83bfff;--r:22px;--shadow:0 25px 80px #0009}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--text);font-family:Vazirmatn,sans-serif;overflow-x:hidden}body.lock{overflow:hidden}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{width:min(1280px,calc(100% - 40px));margin:auto}.muted{color:var(--muted)}.eyebrow{font-size:10px;letter-spacing:1.8px;color:var(--lime);font-weight:900}.announcement{background:var(--lime);color:#10150b;font-size:11px;font-weight:800}.announcement .wrap{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:10px}.announcement a{text-decoration:underline}
+header{position:sticky;top:0;z-index:40;background:#090b14e8;backdrop-filter:blur(20px);border-bottom:1px solid #ffffff12}.nav{height:76px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:10px;white-space:nowrap;font-weight:1000;font-size:23px;letter-spacing:-1px}.brand-mark{width:42px;height:42px;display:grid;place-items:center;background:var(--lime);color:#11170c;border-radius:14px;font-size:23px;box-shadow:0 0 35px #59e1f230}.brand-name span{color:var(--lime)}.navlinks{display:flex;align-items:center;gap:22px;flex:1;color:#c2cdbf;font-size:12px}.navlinks a{transition:.2s}.navlinks a:hover{color:var(--lime)}.navtools{display:flex;gap:8px}.tool{width:41px;height:41px;position:relative;border:1px solid var(--line);border-radius:13px;background:var(--panel);color:var(--text);font-size:17px}.tool:hover{border-color:var(--lime);color:var(--lime)}.bubble{position:absolute;top:-7px;left:-6px;min-width:18px;padding:2px 5px;border-radius:20px;background:var(--orange);color:#1a1008;font-size:9px;font-weight:900}.mobile-menu{display:none}
+.hero{padding:54px 0 38px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:-150px auto auto -120px;width:650px;height:600px;background:radial-gradient(circle,#59e1f217,transparent 67%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px}.hero-copy{position:relative;z-index:2}.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border:1px solid #59e1f244;background:#59e1f20d;color:var(--lime);border-radius:30px;font-size:10px;font-weight:800}.pulse{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 13px var(--lime)}h1{font-size:clamp(39px,5.4vw,70px);line-height:1.22;letter-spacing:-2.5px;margin:19px 0 16px;font-weight:1000}h1 span{color:var(--lime)}.hero-copy>p{max-width:560px;color:#afbcad;font-size:14px;line-height:2.25}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{border:0;border-radius:13px;padding:13px 19px;font-size:12px;font-weight:900;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.primary{background:var(--lime);color:#12170d;box-shadow:0 8px 28px #59e1f220}.primary:hover{transform:translateY(-3px);background:#9cf2ff;box-shadow:0 13px 34px #59e1f240}.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}.secondary:hover{border-color:var(--lime);color:var(--lime)}.hero-stats{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap}.stat b{font-size:20px;display:block}.stat small{font-size:10px;color:var(--muted)}.hero-art{height:440px;position:relative;display:grid;place-items:center;isolation:isolate}.hero-orb{position:absolute;width:365px;height:365px;border-radius:50%;background:radial-gradient(circle,#59e1f228,transparent 68%);filter:blur(8px)}.hero-ring{position:absolute;width:410px;height:265px;border:1px solid #59e15540;border-radius:50%;transform:rotate(-23deg)}.hero-ring:after{content:"";position:absolute;right:13%;top:6%;width:9px;height:9px;background:var(--orange);border-radius:50%;box-shadow:0 0 20px var(--orange)}.hero-product{position:relative;width:min(83%,470px);height:360px;display:grid;place-items:center;transform:rotate(-4deg);filter:drop-shadow(0 30px 30px #0009)}.hero-product img{width:100%;height:100%;object-fit:contain;mix-blend-mode:screen}.float-card{position:absolute;padding:12px 15px;background:#1b241cdb;border:1px solid #ffffff20;border-radius:15px;backdrop-filter:blur(14px);box-shadow:var(--shadow)}.float-card b{display:block;font-size:12px}.float-card small{font-size:9px;color:#b7c4b4}.float-a{top:37px;right:0}.float-b{bottom:36px;left:0}.float-c{top:46%;left:2%;font-size:24px}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:0 auto 52px}.trust-item{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;align-items:center;gap:11px}.trust-icon{width:40px;height:40px;flex:none;border-radius:12px;background:#59e1f214;display:grid;place-items:center;font-size:18px}.trust b{font-size:11px;display:block}.trust small{font-size:9px;color:var(--muted)}
+.section{padding:28px 0 62px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:22px}.section-head h2{margin:4px 0 5px;font-size:27px;letter-spacing:-.8px}.section-head p{margin:0;color:var(--muted);font-size:11px}.text-link{font-size:11px;color:var(--lime);font-weight:800}.categories{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.category{min-height:150px;padding:19px;background:linear-gradient(145deg,#202920,#131813);border:1px solid var(--line);border-radius:19px;position:relative;overflow:hidden;transition:.22s}.category:hover{transform:translateY(-5px);border-color:#59e1f280}.category .emoji{font-size:31px}.category b{display:block;margin-top:13px;font-size:13px}.category small{color:var(--muted);font-size:10px}.category:after{content:"";position:absolute;width:110px;height:110px;border-radius:50%;left:-40px;bottom:-50px;background:#59e1f20c}
+.promo{margin:0 auto 42px;padding:26px 30px;border:1px solid #9a7bff48;border-radius:24px;background:radial-gradient(circle at 10% 50%,#9a7bff20,transparent 35%),linear-gradient(110deg,#302016,#1d2119 65%);display:flex;align-items:center;justify-content:space-between;gap:20px;overflow:hidden}.promo h2{margin:4px 0;font-size:23px}.promo p{margin:0;color:#c7b7a9;font-size:11px}.countdown{display:flex;gap:8px;direction:ltr}.time{min-width:56px;text-align:center;padding:8px;background:#14130f;border:1px solid #ffffff20;border-radius:12px}.time b{display:block;font-size:19px}.time small{font-size:9px;color:#b9a99a}
+.toolbar{display:flex;gap:9px;flex-wrap:wrap;margin:18px 0 13px}.searchbox{position:relative;flex:1;min-width:200px}.searchbox input{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:12px 43px 12px 14px;color:white;outline:0}.searchbox:before{content:"⌕";position:absolute;right:14px;top:3px;font-size:27px;color:var(--muted)}.searchbox input:focus{border-color:var(--lime)}select{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:13px;padding:11px;outline:0}.filters{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}.filter{border:1px solid var(--line);background:var(--panel);color:#b8c4b5;padding:8px 14px;border-radius:30px;font-size:10px}.filter.active,.filter:hover{border-color:var(--lime);background:#59e1f214;color:var(--lime)}.result-line{display:flex;justify-content:space-between;align-items:center;margin:10px 0 14px;font-size:10px;color:var(--muted)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.product{background:linear-gradient(155deg,#202820,#141914);border:1px solid var(--line);border-radius:19px;overflow:hidden;transition:.23s;position:relative}.product:hover{transform:translateY(-5px);border-color:#59e1f270;box-shadow:0 18px 40px #0006}.product-art{height:190px;background:radial-gradient(circle at 50% 42%,#354534,#1b241b 70%);display:grid;place-items:center;position:relative;cursor:pointer;overflow:hidden}.product-art img{width:85%;height:82%;object-fit:contain;mix-blend-mode:screen;transition:.3s;filter:drop-shadow(0 14px 10px #0007)}.product:hover .product-art img{transform:scale(1.07) rotate(-3deg)}.device-fallback{font-size:70px}.tag{position:absolute;top:11px;right:11px;background:var(--lime);color:#13180c;border-radius:20px;padding:5px 9px;font-size:9px;font-weight:900}.heart{position:absolute;top:9px;left:9px;width:33px;height:33px;border:1px solid #ffffff25;border-radius:10px;background:#101510dd;color:#fff}.heart.active{color:var(--red)}.compare{position:absolute;bottom:10px;left:10px;border:1px solid #ffffff2b;background:#101510df;color:#e9f0e5;border-radius:9px;padding:6px 9px;font-size:9px}.product-info{padding:14px}.brandline{color:var(--lime);font-size:9px;font-weight:800;letter-spacing:.4px}.product h3{font-size:12px;margin:7px 0;min-height:38px}.rating{font-size:10px;color:#ffca65}.rating span{color:var(--muted);margin-right:5px}.price-row{display:flex;justify-content:space-between;align-items:center;margin-top:12px}.price{font-size:14px;font-weight:900}.old{font-size:9px;color:#8e9b8b;text-decoration:line-through;display:block;font-weight:400}.add{width:100%;margin-top:12px;border:1px solid #59e15548;background:#59e1f210;color:var(--lime);border-radius:10px;padding:10px;font-size:10px;font-weight:800}.add:hover{background:var(--lime);color:#11170b}.empty{grid-column:1/-1;padding:35px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:18px}
+.feature-band{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px auto 48px}.feature-card{min-height:210px;padding:25px;border-radius:22px;border:1px solid var(--line);background:linear-gradient(120deg,#1c2b20,#141914);position:relative;overflow:hidden}.feature-card.orange{background:linear-gradient(120deg,#392419,#191914)}.feature-card h3{font-size:20px;margin:9px 0}.feature-card p{max-width:350px;color:#b6c2b4;font-size:11px;line-height:2}.feature-card .big-emoji{position:absolute;left:25px;bottom:0;font-size:100px;opacity:.8;filter:drop-shadow(0 10px 20px #0008)}
+.brand-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:23px 0;margin:0 0 40px;overflow:hidden}.brand-list{display:flex;justify-content:space-around;gap:25px;flex-wrap:wrap;color:#849084;font-size:15px;font-weight:900;letter-spacing:1px}
+.compare-bar{position:fixed;bottom:18px;left:50%;transform:translate(-50%,150%);z-index:45;background:#59e1f2;color:#10160b;border-radius:15px;padding:12px 16px;display:flex;align-items:center;gap:15px;box-shadow:var(--shadow);transition:.3s;white-space:nowrap}.compare-bar.show{transform:translate(-50%,0)}.compare-bar button{border:0;border-radius:9px;padding:8px 12px;background:#10160b;color:var(--lime);font-size:10px;font-weight:900}
+.reviews-panel{padding:26px;border-radius:22px;background:var(--panel);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.reviews-panel h3{margin:0 0 7px;font-size:17px}.reviews-panel p{margin:0;color:var(--muted);font-size:11px;line-height:2}.review-icon{font-size:50px}
+.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:35px}.faq-intro h2{font-size:30px;line-height:1.5;margin:8px 0}.faq-intro p{color:var(--muted);font-size:12px;line-height:2}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;padding:17px 0;background:none;border:0;color:var(--text);display:flex;justify-content:space-between;text-align:right;font-size:12px;font-weight:800}.faq-a{display:none;color:var(--muted);font-size:11px;line-height:2;padding:0 0 16px}.faq-item.open .faq-a{display:block}.faq-item.open .faq-q span{color:var(--lime)}
+.newsletter{padding:34px;border:1px solid #59e1f235;border-radius:24px;background:radial-gradient(circle at 90% 20%,#59e1f217,transparent 30%),var(--panel);display:flex;align-items:center;justify-content:space-between;gap:22px;margin-bottom:60px}.newsletter h2{margin:4px 0;font-size:22px}.newsletter p{font-size:11px;color:var(--muted);margin:0}.news-form{display:flex;gap:8px;min-width:min(420px,100%)}.news-form input{flex:1;min-width:0;background:#0f130f;border:1px solid var(--line);border-radius:12px;padding:12px;color:white;outline:0}
+footer{border-top:1px solid var(--line);background:#090b09;padding:42px 0 20px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:30px}.footer-brand p{max-width:300px;color:var(--muted);font-size:11px;line-height:2.2}.footer-col b{display:block;margin-bottom:14px;font-size:12px}.footer-col a{display:block;color:var(--muted);font-size:10px;margin:10px 0}.footer-col a:hover{color:var(--lime)}.socials{display:flex;gap:8px;margin-top:14px}.socials a{width:34px;height:34px;border:1px solid var(--line);border-radius:10px;display:grid;place-items:center;color:var(--lime)}.copyright{border-top:1px solid var(--line);margin-top:30px;padding-top:17px;color:#758174;font-size:9px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.overlay{position:fixed;inset:0;background:#000a;backdrop-filter:blur(5px);z-index:60;opacity:0;visibility:hidden;transition:.25s}.overlay.show{opacity:1;visibility:visible}.drawer{position:fixed;z-index:61;top:0;left:0;width:min(440px,100%);height:100dvh;background:#121712;border-right:1px solid var(--line);transform:translateX(-105%);transition:.3s;display:flex;flex-direction:column}.drawer.show{transform:translateX(0)}.drawer-head{padding:21px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.drawer-head h3{margin:0;font-size:16px}.close{width:34px;height:34px;border:1px solid var(--line);background:var(--panel2);color:white;border-radius:10px}.drawer-items{padding:17px 20px;overflow:auto;flex:1}.cart-row{display:flex;gap:13px;padding:13px 0;border-bottom:1px solid var(--line)}.cart-icon{width:65px;height:65px;flex:none;border-radius:13px;background:var(--panel3);display:grid;place-items:center;font-size:28px}.cart-row h4{font-size:11px;margin:0 0 5px}.cart-row small{color:var(--lime);font-size:10px}.qty{display:flex;align-items:center;gap:9px;margin-top:9px}.qty button{border:1px solid var(--line);background:var(--panel2);color:white;border-radius:7px;padding:3px 9px}.qty .remove{font-size:9px;color:var(--red);border:0;background:none}.drawer-bottom{padding:18px 20px;border-top:1px solid var(--line);background:#101410}.total{display:flex;justify-content:space-between;font-weight:900;font-size:13px;margin-bottom:12px}.shipping-track{height:6px;background:#303a30;border-radius:20px;overflow:hidden;margin:9px 0}.shipping-track span{height:100%;display:block;background:var(--lime);width:0;transition:.3s}.shipping-note{font-size:9px;color:var(--muted);margin-bottom:12px}.coupon-row{display:flex;gap:7px;margin:12px 0}.coupon-row input{width:100px;flex:1;min-width:0;background:#090e09;border:1px solid var(--line);border-radius:9px;padding:9px;color:white;font-size:10px}.coupon-row button{border:0;background:var(--panel3);color:var(--lime);border-radius:9px;padding:8px 12px;font-size:10px}.full{width:100%}.note{font-size:9px;color:var(--muted);line-height:1.8;text-align:center;margin:10px 0 0}
+.modal{position:fixed;z-index:62;top:50%;left:50%;transform:translate(-50%,-46%) scale(.96);width:min(720px,calc(100% - 28px));max-height:88dvh;overflow:auto;background:#151b15;border:1px solid var(--line);border-radius:22px;padding:23px;opacity:0;visibility:hidden;transition:.25s;box-shadow:var(--shadow)}.modal.show{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.modal-head h3{font-size:17px;margin:0}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.detail-image{height:280px;background:radial-gradient(circle,#344334,#1b241b);border-radius:17px;display:grid;place-items:center}.detail-image img{width:90%;height:90%;object-fit:contain;mix-blend-mode:screen}.detail-copy h2{font-size:21px;line-height:1.5}.detail-copy p{color:var(--muted);font-size:11px;line-height:2}.specs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.spec{background:var(--panel2);border:1px solid var(--line);padding:10px;border-radius:10px;font-size:10px}.spec b{display:block;color:var(--lime);margin-bottom:4px}.toast{position:fixed;bottom:24px;right:50%;transform:translate(50%,25px);z-index:90;background:#e8ffbd;color:#10160b;padding:12px 18px;border-radius:12px;font-size:11px;font-weight:900;opacity:0;pointer-events:none;transition:.25s;box-shadow:var(--shadow)}.toast.show{opacity:1;transform:translate(50%,0)}
+@media(max-width:1000px){.nav{gap:15px}.navlinks{gap:13px}.products{grid-template-columns:repeat(3,1fr)}.hero-art{height:380px}.categories{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.wrap{width:min(100% - 28px,600px)}.announcement .wrap{justify-content:center;text-align:center}.announcement .wrap span:last-child{display:none}.nav{height:66px}.navlinks{display:none}.mobile-menu{display:block}.brand{font-size:20px}.brand-mark{width:38px;height:38px}.navtools{margin-right:auto}.tool{width:37px;height:37px}.hero{padding:35px 0 20px}.hero-grid{grid-template-columns:1fr;gap:5px}.hero-copy{text-align:center}.hero-copy>p{margin-inline:auto;font-size:12px}.actions,.hero-stats{justify-content:center}.hero-art{height:300px;order:-1}.hero-product{height:280px}.hero-orb{width:260px;height:260px}.hero-ring{width:300px;height:190px}.float-a{right:0;top:15px}.float-b{bottom:12px;left:0}.float-c{left:0}.trust{grid-template-columns:repeat(2,1fr);margin-bottom:30px}.trust-item{padding:11px}.section{padding:22px 0 42px}.section-head h2{font-size:22px}.categories{grid-template-columns:repeat(2,1fr)}.category{min-height:130px}.promo{padding:20px;flex-direction:column;align-items:flex-start}.countdown{align-self:center}.products{grid-template-columns:repeat(2,1fr);gap:9px}.product-art{height:150px}.product-art img{width:90%}.product-info{padding:11px}.product h3{font-size:11px}.price{font-size:12px}.feature-band{grid-template-columns:1fr}.feature-card{min-height:185px}.faq-grid{grid-template-columns:1fr;gap:15px}.reviews-panel{padding:20px}.newsletter{padding:23px;flex-direction:column;align-items:stretch}.news-form{min-width:0}.footer-grid{grid-template-columns:1fr 1fr;gap:23px}.detail-grid{grid-template-columns:1fr}.detail-image{height:210px}.modal{padding:16px}.compare-bar{max-width:calc(100% - 20px);white-space:normal;width:max-content}.compare-bar span{font-size:10px}}
+@media(max-width:390px){.products{grid-template-columns:1fr 1fr}.product-art{height:130px}.navtools{gap:5px}.tool{width:34px;height:34px}.hero-stats{gap:16px}.footer-grid{gap:15px}}
+
+.contact-panel{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px;align-items:stretch;margin:0 auto 65px;padding:26px;border:1px solid #34415d;border-radius:24px;background:radial-gradient(circle at 5% 5%,#59e1f21c,transparent 38%),linear-gradient(110deg,#151c2b,#101522)}.contact-intro{grid-row:span 1}.contact-intro h2{font-size:28px;line-height:1.55;margin:8px 0}.contact-intro h2 span{color:var(--lime)}.contact-intro p{font-size:11px;line-height:2;color:var(--muted)}.contact-method{display:flex;flex-direction:column;justify-content:center;gap:7px;padding:18px;background:#0c1220;border:1px solid #34415d;border-radius:15px;transition:.22s}.contact-method:hover{transform:translateY(-4px);border-color:var(--lime);box-shadow:0 10px 30px #59e1f214}.contact-method>span{width:36px;height:36px;display:grid;place-items:center;background:#59e1f21b;color:var(--lime);border-radius:10px;font-size:18px}.contact-method small,.contact-method em{font-size:9px;color:var(--muted);font-style:normal}.contact-method strong{font-size:15px;color:#f4f6ff}.creator-line{grid-column:1/-1;display:flex;align-items:center;gap:12px;padding-top:17px;border-top:1px solid #34415d}.creator-line small{font-size:8px;letter-spacing:1.2px;color:var(--muted)}.creator-line strong{font-size:12px}.creator-line i{font-style:normal;color:var(--lime)}
+@media(max-width:760px){.contact-panel{grid-template-columns:1fr 1fr;padding:18px}.contact-intro{grid-column:1/-1}.contact-intro h2{font-size:25px}.contact-method{padding:13px}.contact-method strong{font-size:12px}.creator-line{flex-wrap:wrap}}
+
+
+/* GOLI GAME feature upgrade */
+.advanced-filters{display:flex;gap:10px;align-items:end;flex-wrap:wrap;padding:13px;margin:0 0 18px;background:var(--panel);border:1px solid var(--line);border-radius:15px}
+.advanced-filters label{display:grid;gap:6px;color:var(--muted);font-size:10px;flex:1;min-width:135px}
+.advanced-filters input,.advanced-filters select,.recommend-controls input,.review-form input,.review-form textarea,.review-form select{width:100%;min-width:0;background:#0c1220;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px;outline:0}
+.advanced-filters input:focus,.advanced-filters select:focus,.recommend-controls input:focus,.review-form input:focus,.review-form textarea:focus{border-color:var(--lime)}
+.filter-reset{border:1px solid var(--line);background:transparent;color:var(--muted);padding:10px 13px;border-radius:10px;font-size:10px}
+.recommend-box{padding:27px;border:1px solid #59e1f244;border-radius:24px;background:radial-gradient(circle at 5% 10%,#59e1f218,transparent 35%),var(--panel)}
+.recommend-box h2{margin:5px 0;font-size:26px}.recommend-box p{margin:0;color:var(--muted);font-size:11px}
+.recommend-controls{display:flex;gap:9px;margin:18px 0;max-width:600px}.recommend-controls input{flex:1}
+.recommend-results{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.recommend-card{display:flex;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:14px;background:#0b101b}
+.recommend-card .rec-icon{font-size:30px}.recommend-card b{display:block;font-size:11px}.recommend-card small{color:var(--muted);font-size:10px}
+.review-layout{display:grid;grid-template-columns:1fr 1fr;align-items:start}
+.review-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.review-form textarea{grid-column:1/-1;min-height:85px;resize:vertical}
+.review-form button{grid-column:1/-1}
+.review-list{display:grid;gap:9px;max-height:350px;overflow:auto}
+.review-item{padding:12px;border:1px solid var(--line);border-radius:13px;background:#0b101b}
+.review-item-head{display:flex;justify-content:space-between;gap:10px;font-size:11px}.review-item p{font-size:11px;line-height:1.9;color:#c3cce0;margin:8px 0 0}
+.review-stars{color:#ffca65;white-space:nowrap}
+@media(max-width:700px){.review-layout{grid-template-columns:1fr}.recommend-controls{flex-direction:column}.review-form{grid-template-columns:1fr}.review-form textarea,.review-form button{grid-column:auto}}
+
+</style>
+</head>
+<body>
+<div class="announcement"><div class="wrap"><span>🎮 به دنیای GOLI GAME خوش اومدی | بازی، جدی‌تر از همیشه</span><span>پشتیبانی و راهنمای خرید: <a href="#contact">راه‌های ارتباطی</a></span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#"><span class="brand-mark">G</span><span class="brand-name">GOLI <span>GAME</span></span></a>
+<nav class="navlinks" id="navlinks"><a href="#shop">فروشگاه</a><a href="#categories">دسته‌بندی‌ها</a><a href="#offers">پیشنهادها</a><a href="#why-us">چرا گلی گیم؟</a><a href="#faq">سوالات متداول</a></nav>
+<div class="navtools">
+<button class="tool mobile-menu" id="menuBtn" aria-label="منو">☰</button>
+<button class="tool" id="searchFocus" aria-label="جستجو">⌕</button>
+<button class="tool" id="wishBtn" aria-label="علاقه‌مندی‌ها">♡<span class="bubble" id="wishCount">۰</span></button>
+<button class="tool" id="cartBtn" aria-label="سبد خرید">▣<span class="bubble" id="cartCount">۰</span></button>
+</div></div></header>
+
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div class="hero-copy"><span class="pill"><i class="pulse"></i> LEVEL UP YOUR GAME</span><h1>دنیای بازی،<br><span>با انتخاب تو.</span></h1><p>از کنسول‌های نسل جدید تا کنترلر، هدست و تجهیزات گیمینگ. هر چیزی که برای ساختن ستاپ بعدی‌ات لازم داری، اینجاست.</p>
+<div class="actions"><a class="btn primary" href="#shop">شروع خرید <span>←</span></a><a class="btn secondary" href="#categories">گشتن تو دسته‌بندی‌ها</a></div>
+<div class="hero-stats"><div class="stat"><b>01.</b><small>انتخاب راحت‌تر</small></div><div class="stat"><b>02.</b><small>مقایسه قبل از خرید</small></div><div class="stat"><b>03.</b><small>تجربه گیمینگ بهتر</small></div></div></div>
+<div class="hero-art"><div class="hero-orb"></div><div class="hero-ring"></div><div class="hero-product"><img src="ps5-hero.png" alt="کنسول پلی استیشن ۵ اسلیم"></div><div class="float-card float-a"><b>YOUR NEXT LEVEL</b><small>تجهیزاتت رو ارتقا بده</small></div><div class="float-card float-b"><b>GAMING MODE: ON</b><small>وقتشه وارد بازی بشی</small></div><div class="float-card float-c">🎮</div></div>
+</div></section>
+<div class="wrap trust" id="why-us">
+<div class="trust-item"><div class="trust-icon">🛡️</div><div><b>خرید با اطلاعات کامل</b><small>مشخصات و جزئیات هر محصول</small></div></div>
+<div class="trust-item"><div class="trust-icon">🚚</div><div><b>اطلاعات ارسال شفاف</b><small>جزئیات قبل از نهایی‌کردن خرید</small></div></div>
+<div class="trust-item"><div class="trust-icon">🎧</div><div><b>راهنمای انتخاب</b><small>کمک برای انتخاب مناسب‌تر</small></div></div>
+<div class="trust-item"><div class="trust-icon">🔁</div><div><b>مقایسه محصولات</b><small>قبل از تصمیم، کنار هم ببین</small></div></div>
+</div>
+
+<section class="section" id="categories"><div class="wrap"><div class="section-head"><div><div class="eyebrow">FIND YOUR GEAR</div><h2>از کجا شروع کنیم؟</h2><p>دسته‌ای که دنبالش هستی رو انتخاب کن.</p></div><a class="text-link" href="#shop">همه محصولات ←</a></div>
+<div class="categories">
+<a class="category" href="#shop" data-jump-cat="کنسول"><span class="emoji">🎮</span><b>کنسول بازی</b><small>PlayStation · Xbox · Nintendo</small></a>
+<a class="category" href="#shop" data-jump-cat="دسته"><span class="emoji">🕹️</span><b>دسته و کنترلر</b><small>کنترل دقیق‌تر، بازی بهتر</small></a>
+<a class="category" href="#shop" data-jump-cat="هدست"><span class="emoji">🎧</span><b>هدست گیمینگ</b><small>صدای بازی رو از دست نده</small></a>
+<a class="category" href="#shop" data-jump-cat="لوازم"><span class="emoji">⌨️</span><b>لوازم جانبی</b><small>برای ستاپ کامل‌تر</small></a>
+<a class="category" href="#shop" data-jump-cat="بازی"><span class="emoji">💿</span><b>بازی‌ها</b><small>ماجراجویی بعدی شروع می‌شه</small></a>
+</div></div></section>
+
+<section class="wrap promo" id="offers"><div><div class="eyebrow" style="color:var(--orange)">GAMER'S PICK</div><h2>پیشنهادهای ویژه‌ی گلی گیم</h2><p>محصولات منتخب رو ببین و با هم مقایسه کن.</p></div><div class="countdown" aria-label="شمارش معکوس نمایشی"><div class="time"><b id="hh">08</b><small>ساعت</small></div><div class="time"><b id="mm">24</b><small>دقیقه</small></div><div class="time"><b id="ss">36</b><small>ثانیه</small></div></div></section>
+
+<section class="section" id="shop"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">THE GEAR ROOM</div><h2>ویترین محصولات</h2><p>بگرد، فیلتر کن، مقایسه کن و انتخابت رو بساز.</p></div><span class="text-link" id="resultCount">۰ محصول</span></div>
+<div class="toolbar"><div class="searchbox"><input id="searchInput" type="search" placeholder="اسم محصول، برند یا دسته‌بندی..." autocomplete="off"></div><select id="sortSelect" aria-label="مرتب‌سازی"><option value="featured">مرتب‌سازی: پیشنهادی</option><option value="low">ارزان‌ترین</option><option value="high">گران‌ترین</option><option value="name">نام محصول</option></select></div>
+<div class="filters" id="filters"><button class="filter active" data-filter="همه">همه</button><button class="filter" data-filter="کنسول">کنسول</button><button class="filter" data-filter="دسته">دسته</button><button class="filter" data-filter="هدست">هدست</button><button class="filter" data-filter="لوازم">لوازم جانبی</button><button class="filter" data-filter="بازی">بازی</button></div>
+<div class="advanced-filters">
+<label>حداقل قیمت <input id="minPrice" type="number" min="0" placeholder="مثلاً ۱۰۰۰۰۰۰"></label>
+<label>حداکثر قیمت <input id="maxPrice" type="number" min="0" placeholder="مثلاً ۳۰۰۰۰۰۰۰"></label>
+<label>حداقل امتیاز <select id="ratingFilter"><option value="0">همه امتیازها</option><option value="4.5">۴.۵ به بالا</option><option value="4.7">۴.۷ به بالا</option><option value="4.8">۴.۸ به بالا</option></select></label>
+<button class="filter-reset" id="advancedReset">پاک‌کردن فیلترهای پیشرفته</button>
+</div>
+<div class="result-line"><span id="filterSummary">نمایش همه محصولات</span><button class="text-link" id="clearFilters" style="background:none;border:0">پاک کردن فیلترها ×</button></div>
+<div class="products" id="products"></div>
+</div></section>
+
+<section class="section recommend-section" id="smart-pick"><div class="wrap recommend-box">
+<div><div class="eyebrow">SMART GAMER PICK</div><h2>با بودجه‌ات چی بخری؟</h2><p>بودجه‌ات رو وارد کن تا از بین محصولات موجود، چند گزینه مناسب پیشنهاد بدیم.</p></div>
+<div class="recommend-controls"><input id="budgetInput" type="number" min="0" placeholder="بودجه به تومان، مثلاً ۱۰۰۰۰۰۰۰"><button class="btn primary" id="recommendBtn">پیشنهاد بده</button></div>
+<div id="recommendResults" class="recommend-results"><span class="muted">هنوز بودجه‌ای وارد نکردی.</span></div>
+</div></section>
+
+<div class="wrap feature-band">
+<div class="feature-card"><div class="eyebrow">BUILD YOUR SETUP</div><h3>ستاپت رو خودت بساز.</h3><p>کنسول، کنترلر، هدست و لوازم جانبی رو کنار هم بچین. محصولات رو مقایسه کن تا انتخابت دقیق‌تر باشه.</p><a class="text-link" href="#shop">دیدن تجهیزات ←</a><span class="big-emoji">🖥️</span></div>
+<div class="feature-card orange"><div class="eyebrow" style="color:var(--orange)">SMART CHOICE</div><h3>قبل از خرید، با خیال راحت بررسی کن.</h3><p>جزئیات محصول، قیمت و ویژگی‌ها رو ببین. هر سوالی داشتی از بخش راهنمای خرید شروع کن.</p><a class="text-link" href="#faq">راهنمای خرید ←</a><span class="big-emoji">⚡</span></div>
+</div>
+
+<div class="brand-strip"><div class="wrap brand-list"><span>PLAYSTATION</span><span>XBOX</span><span>NINTENDO</span><span>RAZER</span><span>LOGITECH</span><span>GOLI GEAR</span></div></div>
+
+<section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">YOUR VOICE MATTERS</div><h2>نظر گیمرها</h2><p>تجربه‌ی خریداران، بخش مهم انتخاب محصوله.</p></div></div>
+<div class="reviews-panel review-layout">
+<div class="review-form-wrap"><h3>تجربه‌ات رو ثبت کن</h3><p>دیدگاه‌ها فقط در همین مرورگر ذخیره می‌شن و خرید تأییدشده محسوب نمی‌شن.</p>
+<form id="reviewForm" class="review-form">
+<select id="reviewProduct" required aria-label="انتخاب محصول"></select>
+<select id="reviewRating" required aria-label="امتیاز"><option value="5">۵ ستاره</option><option value="4">۴ ستاره</option><option value="3">۳ ستاره</option><option value="2">۲ ستاره</option><option value="1">۱ ستاره</option></select>
+<input id="reviewName" maxlength="30" placeholder="نام نمایشی (اختیاری)">
+<textarea id="reviewText" maxlength="400" required placeholder="نظرت درباره این محصول چیه؟"></textarea>
+<button class="btn primary" type="submit">ثبت دیدگاه</button></form></div>
+<div class="review-list-wrap"><h3>دیدگاه‌های ثبت‌شده</h3><div id="reviewList" class="review-list"><p class="muted">هنوز دیدگاهی ثبت نشده.</p></div></div>
+</div></div></section>
+
+<section class="section" id="faq"><div class="wrap faq-grid"><div class="faq-intro"><div class="eyebrow">NEED A HAND?</div><h2>سوال داری؟<br>از اینجا شروع کن.</h2><p>جواب چندتا از سوال‌های رایج درباره انتخاب محصول و خرید رو اینجا گذاشتیم.</p><a href="#contact" class="btn secondary">راه‌های ارتباطی</a></div>
+<div class="faq-list">
+<div class="faq-item"><button class="faq-q">چطور محصول مناسب خودم رو انتخاب کنم؟ <span>＋</span></button><div class="faq-a">اول نوع استفاده و بودجه‌ات رو مشخص کن. بعد مشخصات محصولات رو در صفحه جزئیات ببین و از قابلیت مقایسه استفاده کن. اگر بین چند مدل شک داری، از راه ارتباطی فروشگاه راهنمایی بگیر.</div></div>
+<div class="faq-item"><button class="faq-q">چطور دو محصول رو با هم مقایسه کنم؟ <span>＋</span></button><div class="faq-a">روی دکمه «مقایسه» هر محصول بزن. می‌تونی تا سه محصول رو انتخاب کنی و بعد جدول مقایسه رو باز کنی.</div></div>
+<div class="faq-item"><button class="faq-q">چطور محصولی رو برای بعداً نگه دارم؟ <span>＋</span></button><div class="faq-a">روی قلب محصول بزن تا به علاقه‌مندی‌ها اضافه بشه. فهرست علاقه‌مندی‌ها در همین مرورگر ذخیره می‌شه.</div></div>
+<div class="faq-item"><button class="faq-q">آیا امکان پرداخت آنلاین وجود داره؟ <span>＋</span></button><div class="faq-a">برای فعال‌شدن پرداخت آنلاین باید درگاه پرداخت معتبر و بخش سمت سرور به سایت متصل بشه. ظاهر و سبد خرید این نسخه آماده‌ی توسعه است، اما پرداخت واقعی بدون اتصال سرویس پرداخت انجام نمی‌شه.</div></div>
+<div class="faq-item"><button class="faq-q">چطور از وضعیت سفارش باخبر بشم؟ <span>＋</span></button><div class="faq-a">برای پیگیری واقعی سفارش، باید سامانه ثبت سفارش و پنل مدیریت به سایت متصل بشه. پس از راه‌اندازی این بخش، وضعیت سفارش‌ها از حساب کاربری قابل مشاهده خواهد بود.</div></div>
+</div></div></section>
+
+<section class="wrap newsletter" id="newsletter"><div><div class="eyebrow">STAY IN THE GAME</div><h2>خبرهای تازه‌ی دنیای گیم رو دنبال کن.</h2><p>برای ارتباط با فروشگاه، راه ارتباطی خودت رو از بخش تماس دریافت کن.</p></div><div class="news-form"><input id="newsEmail" type="email" placeholder="ایمیل شما"><button class="btn primary" id="newsBtn">ثبت ایمیل</button></div></section>
+</main>
+
+<section class="wrap contact-panel" id="contact">
+  <div class="contact-intro"><div class="eyebrow">LET'S TALK, GAMER</div><h2>سوالی داری؟<br><span>در ارتباطیم.</span></h2><p>برای پرسش درباره محصولات و راهنمایی خرید، از راه‌های زیر پیام بده.</p></div>
+  <a class="contact-method" href="tel:09124571815"><span>☎</span><small>تماس تلفنی</small><strong dir="ltr">09124571815</strong><em>ارتباط مستقیم</em></a>
+  <a class="contact-method" href="https://t.me/amiraliam03" target="_blank" rel="noopener noreferrer"><span>➤</span><small>تلگرام</small><strong dir="ltr">@amiraliam03</strong><em>ارسال پیام</em></a>
+  <div class="creator-line"><small>DESIGNED & BUILT BY</small><strong>امیرعلی گلی‌پور</strong><i>✦</i></div>
+</section>
+
+<footer><div class="wrap"><div class="footer-grid">
+<div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">G</span><span class="brand-name">GOLI <span>GAME</span></span></a><p>گلی گیم؛ جایی برای پیدا کردن تجهیزات، کنسول‌ها و بازی‌هایی که تجربه‌ی گیمینگت رو کامل‌تر می‌کنن.</p><div class="socials"><a href="#contact">◎</a><a href="#contact">➤</a><a href="#contact">✉</a></div></div>
+<div class="footer-col"><b>دسترسی سریع</b><a href="#shop">فروشگاه</a><a href="#categories">دسته‌بندی‌ها</a><a href="#offers">پیشنهادها</a><a href="#faq">سوالات متداول</a></div>
+<div class="footer-col"><b>راهنمای مشتریان</b><a href="#faq">راهنمای خرید</a><a href="#faq">مقایسه محصولات</a><a href="#contact">ارتباط با ما</a></div>
+<div class="footer-col"><b>دسته‌بندی‌ها</b><a href="#shop" data-jump-cat="کنسول">کنسول بازی</a><a href="#shop" data-jump-cat="دسته">دسته و کنترلر</a><a href="#shop" data-jump-cat="هدست">هدست</a><a href="#shop" data-jump-cat="لوازم">لوازم جانبی</a></div>
+</div><div class="copyright"><span>© GOLI GAME · تمام حقوق برای این فروشگاه محفوظ است.</span><span>سازنده: امیرعلی گلی‌پور</span></div></div></footer>
+
+<div class="compare-bar" id="compareBar"><span id="compareText">۰ محصول انتخاب شده</span><button id="compareNow">مقایسه کن</button><button id="clearCompare">پاک کردن</button></div>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer"><div class="drawer-head"><h3 id="drawerTitle">سبد خرید</h3><button class="close" id="closeDrawer">×</button></div><div class="drawer-items" id="drawerItems"></div><div class="drawer-bottom" id="drawerBottom"></div></aside>
+<section class="modal" id="modal"><div class="modal-head"><h3 id="modalTitle">جزئیات محصول</h3><button class="close" id="closeModal">×</button></div><div id="modalBody"></div></section>
+<div class="toast" id="toast"></div>
+
+<script>
+const products = [
+{
+id:1,
+name:"PlayStation 5 Slim",
+brand:"SONY · PLAYSTATION",
+cat:"کنسول",
+price:28900000,
+old:31500000,
+icon:"🎮",
+image:"ps5-slim.png",
+tag:"پرفروش",
+rating:"۴.۹",
+desc:"کنسول نسل نهمی پلی‌استیشن با طراحی باریک‌تر و تجربه‌ی بازی روان.",
+specs:[
+["برند","Sony"],
+["مدل","PlayStation 5 Slim"],
+["نسل","نهم"],
+["نوع دستگاه","کنسول خانگی"],
+["پردازنده","AMD Zen 2"],
+["پردازنده گرافیکی","AMD RDNA 2"],
+["حافظه داخلی","SSD"],
+["رزولوشن خروجی","تا 4K"],
+["نرخ فریم","تا 120FPS در بازی‌های پشتیبانی‌شده"],
+["درایو نوری","بسته به نسخه"],
+["اتصال اینترنت","Wi-Fi و Ethernet"],
+["خروجی تصویر","HDMI"],
+["دسته همراه","DualSense"],
+["قابلیت‌ها","Ray Tracing و Tempest 3D Audio"]
+]
+},
+{
+id:2,
+name:"Xbox Series X",
+brand:"MICROSOFT · XBOX",
+cat:"کنسول",
+price:32500000,
+old:0,
+icon:"🟩",
+image:"x-box.png",
+tag:"ویژه",
+rating:"۴.۸",
+desc:"کنسول قدرتمند ایکس‌باکس برای تجربه‌ی بازی‌های نسل جدید.",
+specs:[
+["برند","Microsoft"],
+["مدل","Xbox Series X"],
+["نسل","نهم"],
+["نوع دستگاه","کنسول خانگی"],
+["پردازنده","AMD Zen 2"],
+["پردازنده گرافیکی","AMD RDNA 2"],
+["حافظه داخلی","SSD"],
+["رزولوشن خروجی","تا 4K"],
+["نرخ فریم","تا 120FPS در بازی‌های پشتیبانی‌شده"],
+["درایو نوری","بسته به نسخه"],
+["اتصال اینترنت","Wi-Fi و Ethernet"],
+["خروجی تصویر","HDMI"],
+["دسته همراه","Xbox Wireless Controller"],
+["قابلیت‌ها","Quick Resume و Ray Tracing"]
+]
+},
+{
+id:3,
+name:"Nintendo Switch OLED",
+brand:"NINTENDO",
+cat:"کنسول",
+price:16800000,
+old:0,
+icon:"🎮",
+image:"nintendo.png",
+tag:"قابل حمل",
+rating:"۴.۷",
+desc:"کنسول هیبریدی نینتندو با نمایشگر OLED برای بازی در خانه و بیرون.",
+specs:[
+["برند","Nintendo"],
+["مدل","Switch OLED"],
+["نوع نمایشگر","OLED"],
+["اندازه نمایشگر","7 اینچ"],
+["رزولوشن نمایشگر","1280×720"],
+["حافظه داخلی","64GB"],
+["حافظه قابل افزایش","microSD"],
+["نوع دستگاه","هیبریدی"],
+["حالت بازی","تلویزیونی و دستی"],
+["دسته‌ها","Joy-Con"],
+["خروجی تلویزیون","تا 1080p"],
+["اتصال بی‌سیم","Wi-Fi و Bluetooth"],
+["پورت شارژ","USB-C"],
+["باتری","قابل شارژ"]
+]
+},
+{
+id:4,
+name:"DualSense Wireless Controller",
+brand:"SONY · ACCESSORIES",
+cat:"دسته",
+price:4250000,
+old:4700000,
+icon:"🕹️",
+image:"ps5-controller.png",
+tag:"محبوب",
+rating:"۴.۹",
+desc:"دسته‌ی بی‌سیم پلی‌استیشن ۵ با بازخورد لمسی و تریگرهای تطبیقی.",
+specs:[
+["برند","Sony"],
+["مدل","DualSense"],
+["نوع اتصال","بی‌سیم و USB"],
+["سازگاری اصلی","PlayStation 5"],
+["سازگاری دیگر","PC در بازی‌های پشتیبانی‌شده"],
+["بازخورد لمسی","Haptic Feedback"],
+["تریگرها","Adaptive Triggers"],
+["میکروفون","داخلی"],
+["بلندگو","داخلی"],
+["حسگر حرکتی","دارد"],
+["تاچ‌پد","دارد"],
+["باتری","قابل شارژ"],
+["درگاه شارژ","USB-C"],
+["دکمه مخصوص","Create"]
+]
+},
+{
+id:5,
+name:"Xbox Wireless Controller",
+brand:"MICROSOFT · ACCESSORIES",
+cat:"دسته",
+price:3650000,
+old:0,
+icon:"🕹️",
+image:"x-box-controller.png",
+tag:"",
+rating:"۴.۶",
+desc:"کنترلر بی‌سیم ایکس‌باکس با طراحی ارگونومیک و چیدمان آشنای دکمه‌ها.",
+specs:[
+["برند","Microsoft"],
+["مدل","Xbox Wireless Controller"],
+["نوع اتصال","بی‌سیم و USB"],
+["سازگاری","Xbox و PC"],
+["طراحی","ارگونومیک"],
+["نوع دکمه‌ها","دکمه‌های دیجیتال"],
+["آنالوگ","دو عدد"],
+["تریگر","چپ و راست"],
+["اتصال بی‌سیم","Xbox Wireless و Bluetooth در نسخه‌های پشتیبانی‌شده"],
+["درگاه سیمی","USB-C در نسخه‌های جدید"],
+["منبع انرژی","باتری یا باتری قابل شارژ"],
+["جک صدا","3.5mm در مدل‌های پشتیبانی‌شده"],
+["دکمه اشتراک‌گذاری","در مدل‌های جدید"],
+["کاربری","بازی"]
+]
+},
+{
+id:6,
+name:"Pulse 3D Gaming Headset",
+brand:"SONY · AUDIO",
+cat:"هدست",
+price:5900000,
+old:6500000,
+icon:"🎧",
+image:"pulse-3d.png",
+tag:"پیشنهادی",
+rating:"۴.۸",
+desc:"هدست بی‌سیم پلی‌استیشن با تمرکز بر صدای سه‌بعدی و ارتباط در بازی.",
+specs:[
+["برند","Sony"],
+["مدل","Pulse 3D"],
+["نوع دستگاه","هدست گیمینگ"],
+["نوع اتصال","بی‌سیم"],
+["سازگاری","PS5 و PS4"],
+["فناوری صدا","3D Audio در بازی‌های پشتیبانی‌شده"],
+["میکروفون","دو میکروفون داخلی"],
+["کنترل صدا","دکمه‌های روی هدست"],
+["حذف نویز میکروفون","دارد"],
+["باتری","قابل شارژ"],
+["درگاه شارژ","USB-C"],
+["ورودی صدا","3.5mm"],
+["کاربری","بازی و چت"],
+["طراحی","روگوشی"]
+]
+},
+{
+id:7,
+name:"Mechanical RGB Keyboard",
+brand:"GOLI GEAR",
+cat:"لوازم",
+price:2850000,
+old:0,
+icon:"⌨️",
+image:"gaming-keyboard.png",
+tag:"جدید",
+rating:"۴.۵",
+desc:"کیبورد مکانیکال با نورپردازی RGB برای تکمیل ستاپ گیمینگ.",
+specs:[
+["نوع","مکانیکال"],
+["دسته‌بندی","لوازم جانبی"],
+["نورپردازی","RGB"],
+["کاربری","گیمینگ و تایپ"],
+["نوع کلید","مکانیکال"],
+["چیدمان کلیدها","بسته به مدل"],
+["تعداد کلیدها","بسته به مدل"],
+["نوع اتصال","بسته به مدل"],
+["قابلیت شخصی‌سازی","بسته به مدل"],
+["سازگاری","بسته به مدل"],
+["زبان کلیدها","بسته به مدل"],
+["طراحی","گیمینگ"],
+["منبع انرژی","بسته به مدل"],
+["رنگ","بسته به موجودی"]
+]
+},
+{
+id:8,
+name:"GTA VI",
+brand:"GAMES · COLLECTION",
+cat:"بازی",
+price:1950000,
+old:2400000,
+icon:"💿",
+image:"GTA-VI.png",
+tag:"تخفیف",
+rating:"۴.۷",
+desc:"مجموعه‌ی بازی‌های ماجراجویی؛ پیش از خرید، نسخه و سازگاری را بررسی کن.",
+specs:[
+["دسته‌بندی","بازی"],
+["ژانر","ماجراجویی"],
+["نوع محصول","مجموعه بازی"],
+["پلتفرم","بسته به نسخه"],
+["سازگاری","بسته به نسخه"],
+["تعداد دیسک","بسته به مجموعه"],
+["زبان بازی","بسته به نسخه"],
+["رده‌بندی سنی","بسته به عنوان"],
+["حالت بازی","بسته به عنوان"],
+["تعداد بازیکن","بسته به عنوان"],
+["نوع انتشار","بسته به نسخه"],
+["ناشر","بسته به عنوان"],
+["سال انتشار","بسته به عنوان"],
+["نکته","نسخه دقیق باید تأیید شود"]
+]
+},
+{
+id:9,
+name:"Gaming Headset Stand",
+brand:"GOLI GEAR",
+cat:"لوازم",
+price:890000,
+old:0,
+icon:"🎧",
+image:"headset-stand.png",
+tag:"",
+rating:"۴.۴",
+desc:"پایه‌ی نگهدارنده‌ی هدست برای مرتب نگه‌داشتن میز گیمینگ.",
+specs:[
+["نوع","پایه هدست"],
+["کاربری","نظم‌دهی میز"],
+["دسته‌بندی","لوازم جانبی"],
+["جنس","بسته به مدل"],
+["ارتفاع","بسته به مدل"],
+["عرض پایه","بسته به مدل"],
+["رنگ","بسته به موجودی"],
+["نوع نصب","رومیزی"],
+["سازگاری","انواع هدست با ابعاد مناسب"],
+["طراحی","گیمینگ"],
+["وزن","بسته به مدل"],
+["پایه ضدلغزش","بسته به مدل"],
+["قابلیت حمل","دارد"],
+["نیاز به برق","ندارد"]
+]
+},
+{
+id:10,
+name:"Pro Controller Grip",
+brand:"GOLI GEAR",
+cat:"دسته",
+price:650000,
+old:0,
+icon:"🕹️",
+image:"controller-grip.png",
+tag:"",
+rating:"۴.۳",
+desc:"روکش و گریپ کنترلی برای راحتی بیشتر هنگام بازی.",
+specs:[
+["نوع","لوازم کنترلر"],
+["کاربری","افزایش اصطکاک"],
+["دسته‌بندی","لوازم جانبی"],
+["جنس","بسته به مدل"],
+["رنگ","بسته به موجودی"],
+["سازگاری","باید پیش از خرید بررسی شود"],
+["نحوه نصب","بسته به مدل"],
+["قابلیت شست‌وشو","بسته به جنس"],
+["بافت سطح","بسته به مدل"],
+["وزن","بسته به مدل"],
+["محتویات بسته","بسته به مدل"],
+["کاربرد","افزایش راحتی در دست"],
+["نوع طراحی","بسته به مدل"],
+["مناسب برای","کنترلر سازگار"]
+]
+},
+{
+id:11,
+name:"Gaming Mouse RGB",
+brand:"GOLI GEAR",
+cat:"لوازم",
+price:1450000,
+old:0,
+icon:"🖱️",
+image:"gaming-mouse.png",
+tag:"",
+rating:"۴.۵",
+desc:"ماوس گیمینگ با نورپردازی RGB برای استفاده روزمره و بازی.",
+specs:[
+["نوع","ماوس گیمینگ"],
+["نورپردازی","RGB"],
+["دسته‌بندی","لوازم جانبی"],
+["نوع اتصال","بسته به مدل"],
+["حسگر","بسته به مدل"],
+["دقت DPI","بسته به مدل"],
+["تعداد کلیدها","بسته به مدل"],
+["نرخ گزارش‌دهی","بسته به مدل"],
+["طراحی","گیمینگ"],
+["سازگاری","بسته به مدل"],
+["طول کابل","در مدل‌های سیمی"],
+["وزن","بسته به مدل"],
+["رنگ","بسته به موجودی"],
+["کاربری","گیمینگ و روزمره"]
+]
+},
+{
+id:12,
+name:"Gaming Desk Mat",
+brand:"GOLI GEAR",
+cat:"لوازم",
+price:790000,
+old:0,
+icon:"🟩",
+image:"desk-mat.png",
+tag:"",
+rating:"۴.۴",
+desc:"پد بزرگ میز برای ایجاد سطحی یکدست و مرتب برای تجهیزات.",
+specs:[
+["نوع","پد میز"],
+["کاربری","ماوس و کیبورد"],
+["دسته‌بندی","لوازم جانبی"],
+["جنس سطح","بسته به مدل"],
+["جنس زیره","بسته به مدل"],
+["ابعاد","بسته به مدل"],
+["ضخامت","بسته به مدل"],
+["نوع لبه","بسته به مدل"],
+["قابلیت شست‌وشو","بسته به جنس"],
+["رنگ","بسته به موجودی"],
+["طرح","بسته به موجودی"],
+["سطح","مناسب حرکت ماوس"],
+["پایه ضدلغزش","بسته به مدل"],
+["کاربری","گیمینگ و اداری"]
+]
+}
+];
+const $=s=>document.querySelector(s), money=n=>new Intl.NumberFormat("fa-IR").format(n)+" تومان", fa=n=>new Intl.NumberFormat("fa-IR").format(n);
+let cart=JSON.parse(localStorage.getItem("goli-cart-v2")||"[]"),wishes=JSON.parse(localStorage.getItem("goli-wish-v2")||"[]"),compare=[],active="همه",wishMode=false,couponApplied=false;
+let reviews=JSON.parse(localStorage.getItem("goli-reviews-v1")||"[]");
+function reviewCount(p){return reviews.filter(r=>r.productId===p.id).length}
+function communityRating(p){let list=reviews.filter(r=>r.productId===p.id);if(list.length)return (list.reduce((a,r)=>a+r.rating,0)/list.length).toFixed(1);return String(p.rating).replace(/[۰-۹]/g,d=>"۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace("٫",".")}
+function saveReviews(){localStorage.setItem("goli-reviews-v1",JSON.stringify(reviews));renderReviews();render()}
+
+const FREE_SHIP=5000000;
+function toast(t){$("#toast").textContent=t;$("#toast").classList.add("show");clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$("#toast").classList.remove("show"),2400)}
+function save(){localStorage.setItem("goli-cart-v2",JSON.stringify(cart));localStorage.setItem("goli-wish-v2",JSON.stringify(wishes));render()}
+function render(){
+ let q=$("#searchInput").value.trim().toLowerCase(),min=Number($("#minPrice")?.value||0),max=Number($("#maxPrice")?.value||0),minRating=Number($("#ratingFilter")?.value||0),arr=products.filter(p=>(active==="همه"||p.cat===active)&&(!wishMode||wishes.includes(p.id))&&(p.name+" "+p.brand+" "+p.cat).toLowerCase().includes(q)&&(!min||p.price>=min)&&(!max||p.price<=max)&&Number(communityRating(p))>=minRating);
+ const sort=$("#sortSelect").value;if(sort==="low")arr.sort((a,b)=>a.price-b.price);if(sort==="high")arr.sort((a,b)=>b.price-a.price);if(sort==="name")arr.sort((a,b)=>a.name.localeCompare(b.name));
+ $("#resultCount").textContent=fa(arr.length)+" محصول";$("#filterSummary").textContent=wishMode?"نمایش علاقه‌مندی‌ها":active==="همه"?"نمایش همه محصولات":"دسته‌بندی: "+active;
+ $("#products").innerHTML=arr.length?arr.map(p=>`<article class="product"><div class="product-art" data-detail="${p.id}">${p.image?`<img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.device-fallback').style.display='block'">`:""}<span class="device-fallback" style="${p.image?"display:none":""}">${p.icon}</span>${p.tag?`<span class="tag">${p.tag}</span>`:""}<button class="heart ${wishes.includes(p.id)?"active":""}" data-wish="${p.id}" aria-label="علاقه‌مندی">${wishes.includes(p.id)?"♥":"♡"}</button><button class="compare" data-compare="${p.id}">${compare.includes(p.id)?"✓ انتخاب شد":"＋ مقایسه"}</button></div><div class="product-info"><div class="brandline">${p.brand}</div><h3>${p.name}</h3><div class="rating">★ ${communityRating(p)} <span>(${reviewCount(p)} دیدگاه محلی) · امتیاز اولیه ${p.rating}</span></div><div class="price-row"><div class="price">${money(p.price)}${p.old?`<span class="old">${money(p.old)}</span>`:""}</div></div><button class="add" data-add="${p.id}">＋ افزودن به سبد خرید</button></div></article>`).join(""):`<div class="empty">محصولی با این مشخصات پیدا نشد. فیلترها رو تغییر بده. 🎮</div>`;
+ $("#cartCount").textContent=fa(cart.reduce((s,x)=>s+x.qty,0));$("#wishCount").textContent=fa(wishes.length);
+ $("#compareBar").classList.toggle("show",compare.length>0);$("#compareText").textContent=fa(compare.length)+" محصول برای مقایسه انتخاب شده";
+}
+function add(id){let x=cart.find(a=>a.id===id);x?x.qty++:cart.push({id,qty:1});save();toast("به سبد خرید اضافه شد ✓")}
+function wish(id){wishes=wishes.includes(id)?wishes.filter(x=>x!==id):[...wishes,id];save();if(wishMode)render()}
+function cartTotal(){return cart.reduce((s,x)=>s+products.find(p=>p.id===x.id).price*x.qty,0)}
+function showDrawer(mode="cart"){
+ wishMode=mode==="wish";$("#drawerTitle").textContent=wishMode?"علاقه‌مندی‌های من":"سبد خرید تو";
+ if(wishMode){let list=products.filter(p=>wishes.includes(p.id));$("#drawerItems").innerHTML=list.length?list.map(p=>`<div class="cart-row"><div class="cart-icon">${p.icon}</div><div style="flex:1"><h4>${p.name}</h4><small>${money(p.price)}</small><div class="qty"><button data-add="${p.id}">افزودن به سبد</button><button class="remove" data-wish="${p.id}">حذف</button></div></div></div>`).join(""):"<div class='empty'>هنوز محصولی ذخیره نکردی.</div>";$("#drawerBottom").innerHTML='<p class="note">فهرست علاقه‌مندی‌ها روی همین مرورگر ذخیره می‌شود.</p>'}
+ else{let total=cartTotal();$("#drawerItems").innerHTML=cart.length?cart.map(x=>{let p=products.find(p=>p.id===x.id);return `<div class="cart-row"><div class="cart-icon">${p.icon}</div><div style="flex:1"><h4>${p.name}</h4><small>${money(p.price)}</small><div class="qty"><button data-qty="${p.id}" data-delta="1">+</button><span>${fa(x.qty)}</span><button data-qty="${p.id}" data-delta="-1">−</button><button class="remove" data-remove="${p.id}">حذف</button></div></div></div>`}).join(""):"<div class='empty'>سبدت هنوز خالیه. یه محصول انتخاب کن! 🎮</div>";
+ let remaining=Math.max(0,FREE_SHIP-total),progress=Math.min(100,total/FREE_SHIP*100);
+ $("#drawerBottom").innerHTML=cart.length?`<div class="shipping-note">${remaining?`برای رسیدن به حد ارسال رایگان ${money(remaining)} دیگه خرید کن.`:"به حد تعیین‌شده برای ارسال رایگان رسیدی!"}</div><div class="shipping-track"><span style="width:${progress}%"></span></div><div class="coupon-row"><input id="couponInput" placeholder="کد تخفیف"><button id="applyCoupon">اعمال کد</button></div><div class="total"><span>جمع کل</span><span>${money(total)}</span></div><button class="btn primary full" id="checkout">ادامه ثبت سفارش</button><p class="note">این نسخه نمایشی است؛ ثبت سفارش و پرداخت آنلاین هنوز فعال نشده است.</p>`:""}
+ $("#overlay").classList.add("show");$("#drawer").classList.add("show");document.body.classList.add("lock");
+}
+function closeAll(){$("#overlay").classList.remove("show");$("#drawer").classList.remove("show");$("#modal").classList.remove("show");document.body.classList.remove("lock")}
+function detail(id){let p=products.find(x=>x.id===id);$("#modalTitle").textContent="جزئیات محصول";$("#modalBody").innerHTML=`<div class="detail-grid"><div class="detail-image">${p.image?`<img src="${p.image}" alt="${p.name}" onerror="this.style.display='none';this.parentElement.querySelector('span').style.display='block'">`:""}<span style="${p.image?"display:none":""};font-size:85px">${p.icon}</span></div><div class="detail-copy"><div class="brandline">${p.brand}</div><h2>${p.name}</h2><p>${p.desc}</p><div class="specs">${p.specs.map(s=>`<div class="spec"><b>${s[0]}</b>${s[1]}</div>`).join("")}</div><div class="price">${money(p.price)}</div><button class="btn primary full" style="margin-top:14px" id="modalAdd">افزودن به سبد خرید</button></div></div>`;$("#modalAdd").onclick=()=>{add(id);$("#modal").classList.remove("show");$("#overlay").classList.remove("show");document.body.classList.remove("lock")};$("#overlay").classList.add("show");$("#modal").classList.add("show");document.body.classList.add("lock")}
+function compareShow(){let list=products.filter(p=>compare.includes(p.id));if(!list.length)return;$("#modalTitle").textContent="مقایسه محصولات";$("#modalBody").innerHTML=`<div style="overflow:auto"><table style="width:100%;border-collapse:collapse;font-size:11px;min-width:420px"><tr><th style="text-align:right;padding:12px">ویژگی</th>${list.map(p=>`<th style="padding:12px">${p.icon}<br>${p.name}</th>`).join("")}</tr>${[["قیمت",p=>money(p.price)],["دسته‌بندی",p=>p.cat],["برند",p=>p.brand],["امتیاز کاربران",p=>"★ "+communityRating(p)],["تعداد دیدگاه",p=>fa(reviewCount(p))],...Array.from(new Set(list.flatMap(p=>p.specs.map(x=>x[0])))).map(key=>[key,p=>(p.specs.find(x=>x[0]===key)||["","—"])[1]])].map(row=>`<tr><td style="padding:12px;border-top:1px solid var(--line);color:var(--lime)">${row[0]}</td>${list.map(p=>`<td style="padding:12px;border-top:1px solid var(--line);text-align:center">${row[1](p)}</td>`).join("")}</tr>`).join("")}</table></div>`;$("#overlay").classList.add("show");$("#modal").classList.add("show");document.body.classList.add("lock")}
+document.addEventListener("click",e=>{
+ let a=e.target.closest("[data-add]");if(a){add(+a.dataset.add);return}
+ let w=e.target.closest("[data-wish]");if(w){wish(+w.dataset.wish);return}
+ let d=e.target.closest("[data-detail]");if(d){detail(+d.dataset.detail);return}
+ let c=e.target.closest("[data-compare]");if(c){let id=+c.dataset.compare;if(compare.includes(id))compare=compare.filter(x=>x!==id);else if(compare.length<3)compare.push(id);else{toast("حداکثر سه محصول رو می‌تونی مقایسه کنی.");return}render();return}
+ let q=e.target.closest("[data-qty]");if(q){let x=cart.find(x=>x.id===+q.dataset.qty);x.qty+=+q.dataset.delta;if(x.qty<=0)cart=cart.filter(y=>y!==x);save();showDrawer();return}
+ let r=e.target.closest("[data-remove]");if(r){cart=cart.filter(x=>x.id!==+r.dataset.remove);save();showDrawer();return}
+ let cat=e.target.closest("[data-jump-cat]");if(cat){active=cat.dataset.jumpCat;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===active));render()}
+});
+$("#filters").onclick=e=>{let b=e.target.closest("[data-filter]");if(!b)return;active=b.dataset.filter;wishMode=false;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()};
+$("#searchInput").oninput=render;$("#sortSelect").onchange=render;$("#cartBtn").onclick=()=>showDrawer();$("#wishBtn").onclick=()=>showDrawer("wish");$("#searchFocus").onclick=()=>{$("#shop").scrollIntoView({behavior:"smooth"});setTimeout(()=>$("#searchInput").focus(),450)};
+$("#clearFilters").onclick=()=>{active="همه";wishMode=false;$("#searchInput").value="";$("#sortSelect").value="featured";document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter==="همه"));render()};
+$("#closeDrawer").onclick=closeAll;$("#closeModal").onclick=closeAll;$("#overlay").onclick=closeAll;
+$("#menuBtn").onclick=()=>{let n=$("#navlinks");let open=n.style.display==="flex";n.style.display=open?"none":"flex";if(!open){n.style.position="absolute";n.style.top="66px";n.style.right="12px";n.style.left="12px";n.style.background="#151b15";n.style.padding="18px";n.style.border="1px solid var(--line)";n.style.borderRadius="14px";n.style.flexDirection="column";n.style.alignItems="stretch";n.style.boxShadow="var(--shadow)"}};
+$("#compareNow").onclick=compareShow;$("#clearCompare").onclick=()=>{compare=[];render()};
+$("#drawerBottom").onclick=e=>{if(e.target.id==="checkout")toast("برای پرداخت واقعی باید درگاه بانکی متصل شود.");if(e.target.id==="applyCoupon"){let code=$("#couponInput").value.trim().toUpperCase();toast(code==="GOLI10"?"کد شناسایی شد؛ محاسبه تخفیف پس از اتصال سامانه فروش فعال می‌شود.":"کد تخفیف معتبر نیست.")}};
+document.querySelectorAll(".faq-q").forEach(b=>b.onclick=()=>{let item=b.parentElement;item.classList.toggle("open");b.querySelector("span").textContent=item.classList.contains("open")?"−":"＋"});
+$("#newsBtn").onclick=()=>{let v=$("#newsEmail").value.trim();if(!v||!v.includes("@")){toast("لطفاً یک ایمیل معتبر وارد کن.");return}toast("فرم آماده است؛ برای ثبت ایمیل باید سرویس خبرنامه متصل شود.");$("#newsEmail").value=""};
+let seconds=8*3600+24*60+36;setInterval(()=>{seconds=seconds>0?seconds-1:8*3600+24*60+36;$("#hh").textContent=String(Math.floor(seconds/3600)).padStart(2,"0");$("#mm").textContent=String(Math.floor(seconds%3600/60)).padStart(2,"0");$("#ss").textContent=String(seconds%60).padStart(2,"0")},1000);
+
+function renderReviews(){
+ const select=$("#reviewProduct");if(select&&!select.options.length)select.innerHTML=products.map(p=>`<option value="${p.id}">${p.name}</option>`).join("");
+ const list=$("#reviewList");if(!list)return;
+ const ordered=[...reviews].sort((a,b)=>b.createdAt-a.createdAt);
+ list.innerHTML=ordered.length?ordered.map(r=>`<article class="review-item"><div class="review-item-head"><b>${escapeHTML(r.name||"گیمر")}</b><span class="review-stars">${"★".repeat(r.rating)}${"☆".repeat(5-r.rating)}</span></div><small class="muted">${products.find(p=>p.id===r.productId)?.name||"محصول"}</small><p>${escapeHTML(r.text)}</p></article>`).join(""):'<p class="muted">هنوز دیدگاهی ثبت نشده. اولین نفری باش که تجربه‌اش رو می‌نویسه!</p>';
+}
+function escapeHTML(value){return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+$("#reviewForm").addEventListener("submit",e=>{
+ e.preventDefault();const productId=Number($("#reviewProduct").value),rating=Number($("#reviewRating").value),name=$("#reviewName").value.trim(),text=$("#reviewText").value.trim();
+ if(!text)return;reviews.push({productId,rating,name,text,createdAt:Date.now()});saveReviews();e.target.reset();toast("دیدگاهت در همین مرورگر ذخیره شد ✓");
+});
+$("#recommendBtn").onclick=()=>{
+ const budget=Number($("#budgetInput").value),box=$("#recommendResults");
+ if(!budget||budget<=0){toast("اول بودجه‌ات رو به تومان وارد کن.");return}
+ const picks=products.filter(p=>p.price<=budget).sort((a,b)=>Number(communityRating(b))-Number(communityRating(a))||a.price-b.price).slice(0,4);
+ box.innerHTML=picks.length?picks.map(p=>`<article class="recommend-card"><span class="rec-icon">${p.icon}</span><div><b>${p.name}</b><small>${money(p.price)} · امتیاز ${communityRating(p)}</small><div><button class="text-link" style="background:none;border:0;padding:7px 0" data-detail="${p.id}">مشاهده محصول</button></div></div></article>`).join(""):'<p class="muted">با این بودجه محصولی پیدا نشد. بودجه رو کمی افزایش بده.</p>';
+};
+["minPrice","maxPrice","ratingFilter"].forEach(id=>$("#"+id).addEventListener("input",render));
+$("#advancedReset").onclick=()=>{$("#minPrice").value="";$("#maxPrice").value="";$("#ratingFilter").value="0";render()};
+renderReviews();
+render();
+</script>
+</body></html>
